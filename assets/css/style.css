@@ -1,0 +1,228 @@
+*{
+    cursor: url(/assets/img/cursor.png),auto;
+}
+:root{
+    --background-color:#89c0e3;
+    --hoover-color:#5bade0;
+    --active-color:#5095bf;
+    --btn-nav:#5a5455;
+    --border-btn-upper:#7d7574;
+    --border-btn-sub:#3e3135;
+    --btn-active-bg:#474543;
+    --text-light-color:#ebebeb;
+}
+
+body{
+    font-size: 1.8rem;
+    background-color: #412d84;
+    font-family: "Pixelify Sans", sans-serif;
+
+}
+
+nav{
+
+    margin-top: 1px;
+    border-top:solid #032a92;
+    border-bottom:solid #032a92;
+    width:97%;
+    background: rgb(3,42,146);
+    background: linear-gradient(0deg, rgba(3,42,146,1) 0%, rgba(0,63,220,1) 37%, rgba(0,65,225,1) 44%, rgba(0,67,234,1) 49%, rgba(0,65,225,1) 54%, rgba(0,63,218,1) 59%, rgba(3,42,146,1) 100%);
+    text-align: center;
+    height: 60px;
+    box-shadow: 20px 13px 0px 0px rgba(0,0,0,0.15);
+}
+
+nav ul{
+    margin-top: 6px;
+    list-style: none;
+
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 0;
+    margin-right: 12px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    background-color:var(--btn-nav);
+    color: #ebebeb;
+    text-shadow: 2px 2px #3d3d3d;
+    font-size: 2rem;
+    padding: 5px 10px;
+    border-top:solid var(--border-btn-upper);
+    border-left:solid var(--border-btn-upper);
+    border-right:solid var(--border-btn-sub);
+    border-bottom: solid var(--border-btn-sub);
+}
+
+
+
+nav ul li:hover ul{
+   display: block;
+}
+
+nav ul li a:active{
+    border-top:solid var(--border-btn-sub);
+    border-left:solid var(--border-btn-sub);
+    border-right:solid var(--border-btn-upper);
+    border-bottom: solid var(--border-btn-upper);
+    background-color: var(--btn-active-bg);
+}
+
+nav ul li ul{
+    position: absolute;
+    margin-top: 10px;
+    background-color: rgb(104, 104, 104);
+    display: none;
+}
+
+nav ul li ul li{
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul li ul li a{
+    display: block;
+    margin: 0;
+}
+
+/* setear el estilo de las cajas */
+
+.main-container{
+    margin: 0 auto;
+    padding-top: 28px;
+    width: 90%;
+}
+
+main{
+    position: absolute;
+    margin: 0 auto;
+    width: 90%;
+    height: 80%;
+    background-color: #2120ac;
+    border-top: solid #382fa9;
+    border-left: solid #382fa9;
+    border-right: solid #160e9b;
+    border-bottom: solid #160e9b;
+    box-shadow: 20px 13px 0px 0px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+main img{
+    max-width: 50%;
+}
+
+.main-header{
+    text-shadow: 2px 2px #3d3d3d;
+    color: var(--text-light-color);
+    padding: 8px;
+    height: 40px;
+    background: rgb(53,63,87);
+    background: linear-gradient(0deg, rgba(53,63,87,1) 0%, rgba(124,119,169,1) 100%);
+}
+
+.out-content{
+    text-align: center;
+    color: var(--text-light-color);
+    padding: 15px;
+}
+
+.out-content a{
+    color: var(--text-light-color);
+}
+
+.content-container{
+    width: 100%;
+    padding: 18px;
+    height: 90%;
+}
+
+.main-content{
+    vertical-align:top;
+    display: inline-block;
+    height: 100%;
+    width: 65%;
+    border: solid;
+    border-top: solid #161382;
+    border-left:solid #161382 ;
+    border-bottom: solid #4240cd;
+    border-right: solid #4240cd;
+    background-color: #000;
+    color: #00df00;
+    text-shadow: #006300;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0px 0px 5px 5px rgba(60,61,78,1);
+    background-color: #202029;
+}
+
+::-webkit-scrollbar-button{
+    background-color: #6b6f8b;
+    background:#51566b;
+    border-top: solid var(--border-btn-upper);
+    border-left: solid var(--border-btn-upper);
+    border-bottom:solid 1px #484859;
+    border-right: solid 1px #484859;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background:#51566b;
+    border-top: solid var(--border-btn-upper);
+    border-left: solid var(--border-btn-upper);
+    border-bottom:solid 1px #484859;
+    border-right: solid 1px #484859;
+}
+
+.main-content img{
+    max-width: 50%;
+}
+
+.side-content{
+    vertical-align:top;
+    display: inline-block;
+    border: solid;
+    height: 100%;
+    width: 33%;
+    margin-left: 15px;
+    border-top: solid #161382;
+    border-left:solid #161382 ;
+    border-bottom: solid #4240cd;
+    border-right: solid #4240cd;
+    background-color: #000;
+    color: #00df00;
+    text-shadow: #006300;
+    font-size: 2.5rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.side-content ul{
+    list-style: none;
+}
+
+.side-content ul li a{
+    display: block;
+    padding: 5px 5px 5px 18px;
+    text-decoration: none;
+    color: #00df00;
+    text-shadow: #006300;
+}
+
+.side-content ul li a:hover{
+
+    background-color: #a50054;
+}
