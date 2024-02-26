@@ -27,3 +27,10 @@ function insertSideContent(element){
     `
     tag.appendChild(node)
 }
+
+addEventListener("load", function(){
+    //document.body.style.backgroundImage = `url('${rootD}assets/img/donkey_kong_country_background.jpg')`;
+})
+
+
+
